@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Temperatures</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="second_page.html">Temperature Converter</a></li>
+            <li><a href="third_page.html">Contact Information</a></li>
+        </ul>
+    </nav>
+    <main class="temperature-converter">
+        <h1>Convert temperatures</h1> 
+        <div>
+            <input type="radio" name="conversion_type" id="to_celsius" checked>Fahrenheit to Celsius
+        </div>
+        <div>
+            <input type="radio" name="conversion_type" id="to_fahrenheit">Celsius to Fahrenheit
+        </div>
+        <div>
+            <label id="degree_label_1">Enter F degrees:</label>
+            <input type="text" id="degrees_entered">
+        </div>
+        <div>
+            <label id="degree_label_2">Degrees Celsius:</label>
+            <input type="text" id="degrees_computed" disabled>
+        </div>
+        <div class="convert-button">
+            <input type="button" id="convert" value="Convert" />
+            
+        </div> 
+        <label class="error-message" id="message"></label>
+    </main>
+    <script src="index.js"></script>
+    <footer></footer>
+</body>
+</html>
